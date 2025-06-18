@@ -8,6 +8,6 @@ dev-run:
 	$(DEVRUN)
 dev:
 	sudo fuser -k 4200/tcp || true
-	sudo systemctl restart docker
+
 	$(DEVBLD)
 	$(DEVRUN)
