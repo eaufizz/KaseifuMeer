@@ -4,10 +4,10 @@ import {
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  templateUrl: './list.component.html',
+  styleUrl: './list.component.scss',
   standalone: false,
 })
-export class HomeComponent {
+export class ListComponent {
 
 }

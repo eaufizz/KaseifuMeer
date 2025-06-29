@@ -12,7 +12,9 @@ import { ScoreAppComponent } from './components/score-app/score-app.component';
 import { SelectTeamComponent } from './components/score-app/select-team/select-team.component';
 import { FormsModule } from '@angular/forms';
 import { SetMemberComponent } from './components/score-app/select-team/set-member/set-member.component';
-
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
+import { InputHouseworkComponent } from './screen/input-housework/input-housework.component';
+import { ListComponent } from './screen/list/list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,9 @@ import { SetMemberComponent } from './components/score-app/select-team/set-membe
     SelectTeamComponent,
     AppComponent,
     SetMemberComponent,
+    HamburgerComponent,
+    InputHouseworkComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
