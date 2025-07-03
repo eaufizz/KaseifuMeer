@@ -1,0 +1,61 @@
+@use "../../variable.scss" as variable;
+
+.home-container {
+  width: 375px;
+  height: 812px;
+  padding: 40px 28px;
+  box-sizing: border-box;
+  background-color: variable.$baseColor;
+  text-align: center;
+  position: relative;
+
+  span{
+    font-size: 32px;
+    color: variable.$fontColor;
+  }
+  
+  .underline {
+    width: 100%;
+    height: 3px;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    background-color: variable.$accentColor;
+  }
+  
+  .housework{
+    width: 288px;
+    height: 44px;
+    background-color: #FDFDFD;
+    font-size: 20px;
+    color: variable.$fontColor;
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input{
+    width: 288px;
+    height: 44px;
+    background-color: #FDFDFD;
+    font-size: 16px;
+    color: #626161;
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page{
+    display: flex;
+    gap: 200px;
+    bottom: 10px;
+    position: absolute;
+    bottom: 20px;
+
+      .forward{
+        scale: (-1);
+        margin-left: 56px;
+      }
+  }
+}

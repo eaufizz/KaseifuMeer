@@ -1,0 +1,47 @@
+<div class="hamburger" (click)="onClickHamburger()">
+  <img
+    src="assets\images\menu.svg.svg"
+    alt="open menu"
+    *ngIf="!isOpened"
+  >
+</div>
+<div class="backdrop"
+  *ngIf="isOpened"
+  (click)="onClickHamburger()"
+>
+  <div class="menu"
+  *ngIf="isOpened">
+    <img
+      src="assets\images\close_icon.svg"
+      alt="close menu"
+      *ngIf="isOpened"
+    >
+    <div
+      class="menu-item"
+      (click)="onClickAddHW()"
+    >
+      <span>家事の追加/編集</span>
+      <div class="underline"></div>
+    </div>
+    <div
+      class="menu-item"
+    >
+      <span>アイコンの変更</span>
+      <div class="underline"></div>
+    </div>
+    <div
+      class="menu-item"
+      (click)="onClickAddHW()"
+    >
+      <span>家事分担の編集</span>
+      <div class="underline"></div>
+    </div>
+    <div
+      class="menu-item"
+      (click)="onClickAddHW()"
+    >
+      <span>ランダムで分担</span>
+      <div class="underline"></div>
+    </div>
+  </div>
+</div>
